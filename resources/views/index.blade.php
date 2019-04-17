@@ -138,19 +138,19 @@
                                     <form>
                                         <div class="row">
                                             <div class="input-field col s3">
-                                                <input type="number" id="origem" name="origem" placeholder="011">
+                                                <input type="number" id="origem" name="origem" placeholder="011" required>
                                                 <label for="origem">DDD Origem</label>
                                             </div>
                                             <div class="input-field col s3">
-                                                <input type="number" id="destino" name="destino" placeholder="011">
+                                                <input type="number" id="destino" name="destino" placeholder="011" required>
                                                 <label for="destino">DDD Destino</label>
                                             </div>
                                             <div class="input-field col s3">
-                                                <input type="number" id="tempo" name="tempo" placeholder="300">
+                                                <input type="number" id="tempo" name="tempo" placeholder="300" required>
                                                 <label for="tempo">Tempo de Liganção em Minutos</label>
                                             </div>
                                             <div class="input-field col s3">
-                                                <select id="plano" name="plano">
+                                                <select id="plano" name="plano" required>
                                                     <option value="" disabled selected>Escolha o plano FaleMais</option>
                                                     <option value="1">FaleMais 30</option>
                                                     <option value="2">FaleMais 60</option>
