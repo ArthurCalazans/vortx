@@ -3,8 +3,9 @@
 
 @push('scripts')
 <script>
-    var comfalemais = "teste";
+    var comfalemais;
     var semfalemais;
+
     $("form").submit(function (e) {
         e.preventDefault();
         if (plano()) {
@@ -78,30 +79,33 @@
                 break;
         }
     }
+
     function calcular_juros(valor) {
         return (valor * 0.1) + valor;
     }
+
     function real(valor) {
         return valor.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
     }
+
     function plano() {
         var origem = parseInt($("#origem").val());
         var destino = parseInt($("#destino").val());
         if (origem === destino) {
             swal({ title: 'Origem deve ser diferente do destino', icon: 'error' });
             return false;
-        } else if (origem > 11 || origem < 16 ){
+        } else if (origem > 11 || origem < 16) {
             swal({ title: "Apenas trabalhamos nos ddd's 11, 16, 17, 18 como origem", icon: 'error' });
-            return false;        
-        }else if (origem > 18 || origem < 11 ){
+            return false;
+        } else if (origem > 18 || origem < 11) {
             swal({ title: "Apenas trabalhamos nos ddd's 11, 16, 17, 18 como origem", icon: 'error' });
-            return false;        
-        }else if (destino > 11 || destino < 16 ){
+            return false;
+        } else if (destino > 11 || destino < 16) {
             swal({ title: "Apenas trabalhamos nos ddd's 11, 16, 17, 18 como destino", icon: 'error' });
-            return false;        
-        }else if (destino > 18 || destino < 11 ){
+            return false;
+        } else if (destino > 18 || destino < 11) {
             swal({ title: "Apenas trabalhamos nos ddd's 11, 16, 17, 18 como destino", icon: 'error' });
-            return false;        
+            return false;
         }
     }
 </script>
@@ -185,15 +189,7 @@
                                             <th>Com FaleMais</th>
                                             <th>Sem FaleMais</th>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>011</td>
-                                                <td>016</td>
-                                                <td>20 minutos</td>
-                                                <td>FaleMais 30</td>
-                                                <td>R$ 0,00</td>
-                                                <td>R$ 38,00</td>
-                                            </tr>
+                                        <tbody>                                            
                                         </tbody>
                                     </table>
                                 </div>
@@ -205,6 +201,4 @@
         </div>
     </div>
 </div>
-
-
 @endsection
