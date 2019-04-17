@@ -11,7 +11,7 @@ A empresa de telefonia **VxTel**, especializada em chamadas de longa distância 
 Normalmente um cliente **VxTel** pode fazer uma chamada de uma cidade para outra pagando uma tarifa fixa por minuto, com o preço sendo pré-definido em uma lista com os códigos DDDs de origem e destino:
 
 
-| Origem | Destino | $/min |
+| Origem | Destino | R$/min |
 | ------ | ------ | ------ |
 | 011 | 016 | 1.90 |
 | 016 | 011 | 2.90 |
@@ -29,9 +29,9 @@ A **VxTel**, preocupada com a transparência junto aos seus clientes, quer dispo
 
 |Origem | Destino | Tempo | Plano FaleMais | Com FaleMais | Sem FaleMais |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| 011 | 016 | 20 | FaleMais | 30 | R$ 0,00 | R$ 38,00 |
-| 011 | 017 | 80 | FaleMais | 60 | R$ 37,40 | R$ 136,00 |
-| 018 | 011 | 200 | FaleMais | 120 | R$ | 167,20 | R$ 380,00 |
-| 018 | 017 | 100 | FaleMais | 30 | - | - |
+| 011 | 016 | 20 | FaleMais 30 | R$ 0,00 | R$ 38,00 |
+| 011 | 017 | 80 | FaleMais 60 | R$ 37,40 | R$ 136,00 |
+| 018 | 011 | 200 | FaleMais 120 | R$ 167,20 | R$ 380,00 |
+| 018 | 017 | 100 | FaleMais 30 | - | - |
 
 #pracimafuracao
