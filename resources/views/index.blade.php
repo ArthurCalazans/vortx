@@ -94,19 +94,14 @@
         if (origem === destino) {
             swal({ title: 'Origem deve ser diferente do destino', icon: 'error' });
             return false;
-        } else if (origem > 11 || origem < 16) {
+        } else if (origem < 11 || origem > 18) {
             swal({ title: "Apenas trabalhamos nos ddd's 11, 16, 17, 18 como origem", icon: 'error' });
-            return false;
-        } else if (origem > 18 || origem < 11) {
-            swal({ title: "Apenas trabalhamos nos ddd's 11, 16, 17, 18 como origem", icon: 'error' });
-            return false;
-        } else if (destino > 11 || destino < 16) {
-            swal({ title: "Apenas trabalhamos nos ddd's 11, 16, 17, 18 como destino", icon: 'error' });
             return false;
         } else if (destino > 18 || destino < 11) {
             swal({ title: "Apenas trabalhamos nos ddd's 11, 16, 17, 18 como destino", icon: 'error' });
             return false;
         }
+        return true;
     }
 </script>
 @endpush
@@ -189,7 +184,7 @@
                                             <th>Com FaleMais</th>
                                             <th>Sem FaleMais</th>
                                         </thead>
-                                        <tbody>                                            
+                                        <tbody>
                                         </tbody>
                                     </table>
                                 </div>
