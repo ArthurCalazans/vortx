@@ -2,9 +2,12 @@
 
 Não encontrei nenhum desafio, porém a tarefa foi feita. Qualquer dúvida entrar em contato!
 
+
+
 ## Projeto
 
-A empresa de telefonia VxTel, especializada em chamadas de longa distância nacional, vai colocar um novo produto no mercado chamado FaleMais.
+A empresa de telefonia **VxTel**, especializada em chamadas de longa distância nacional, vai colocar um novo produto no mercado chamado **FaleMais**.
+
 Normalmente um cliente **VxTel** pode fazer uma chamada de uma cidade para outra pagando uma tarifa fixa por minuto, com o preço sendo pré-definido em uma lista com os códigos DDDs de origem e destino:
 
 
@@ -31,4 +34,4 @@ A **VxTel**, preocupada com a transparência junto aos seus clientes, quer dispo
 | 018 | 011 | 200 | FaleMais | 120 | R$ | 167,20 | R$ 380,00 |
 | 018 | 017 | 100 | FaleMais | 30 | - | - |
 
-##pracimafuracao
+#pracimafuracao
