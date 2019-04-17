@@ -46,6 +46,7 @@
                 + '<td>' + real(comfalemais) + '</td>'
                 + '<td>' + real(semfalemais) + '</td></tr>'
             );
+            
             this.reset();
         }
     });
@@ -66,15 +67,15 @@
                 }
                 break;
 
-            case '016':
+            case 16:
                 return tempo * 2.9;
                 break;
 
-            case '017':
+            case 17:
                 return tempo * 2.7;
                 break;
 
-            case '018':
+            case 18:
                 return tempo * 1.9;
                 break;
         }
@@ -100,8 +101,9 @@
         } else if (destino != 11 && destino != 16 && destino != 17 && destino != 18) {
             swal({ title: "Apenas trabalhamos nos ddd's 11, 16, 17, 18 como destino", icon: 'error' });
             return false;
+        }else{
+            return true;
         }
-        return true;
     }
 </script>
 @endpush
