@@ -94,10 +94,10 @@
         if (origem === destino) {
             swal({ title: 'Origem deve ser diferente do destino', icon: 'error' });
             return false;
-        } else if (origem < 11 || origem > 18) {
+        } else if (origem != 11 && origem != 16 && origem != 17 && origem != 18) {
             swal({ title: "Apenas trabalhamos nos ddd's 11, 16, 17, 18 como origem", icon: 'error' });
             return false;
-        } else if (destino > 18 || destino < 11) {
+        } else if (destino != 11 && destino != 16 && destino != 17 && destino != 18) {
             swal({ title: "Apenas trabalhamos nos ddd's 11, 16, 17, 18 como destino", icon: 'error' });
             return false;
         }
